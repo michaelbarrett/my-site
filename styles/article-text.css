@@ -1,0 +1,41 @@
+h2, p:not(:last-child) { margin-bottom: 0.5rem; }
+
+u {
+  text-decoration: underline;
+}
+
+h1 { font: 700 2rem/1.2 "Open Sans"; }
+h2 { font: 400 1.5rem/1.2 "Open Sans"; }
+time { font: 700 1rem/1.2 "Open Sans"; }
+h3 { font: 700 1rem/1.2 "Open Sans"; }
+p { font: 400 1rem/1.5 "Open Sans"; }
+li { font: 400 1rem/1.5 "Open Sans"; }
+
+a { box-shadow: inset 0 -0.05em black; }
+
+/*blockquote { color: gray;
+	     margin-bottom: 1rem;
+	   }*/
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+@media (max-width: 8.5in) { :root {font-size: 18px;}}
+
+@media (max-width: 5.0in) { :root {font-size: 16px;}}
