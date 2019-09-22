@@ -1,8 +1,11 @@
 article {
     display: grid;
     grid-template-columns: 1fr 5% [start] minmax(0, 740px) [end] 5% 1fr;
-
     padding: 0.5in 0;
+}
+
+body {
+    background-color: #586e75;
 }
 
 article * { grid-column: start / end; }
